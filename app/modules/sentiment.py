@@ -34,7 +34,7 @@ class Sentiment:
         analysis = TextBlob(text)
 
         if analysis.sentiment.polarity == 0:
-            return 'Nuetral'
+            return 'Neutral'
         elif analysis.sentiment.polarity < 0:
             return 'Negative'
         else:
